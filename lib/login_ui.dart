@@ -69,9 +69,39 @@ class _LoginpageUiState extends State<LoginpageUi> {
                 child: Align(
                   alignment: Alignment.centerRight,
                   child: Text('Forgot Password?' ,style: TextStyle(color: Color.fromARGB(255, 192, 173, 1),fontSize: 15),)),
-              )
+              ),
 
-              
+              Flexible(
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 30),
+                  child: SizedBox(
+                    width: 344,
+                    height: 50,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.blue[900]
+                      ),
+                      onPressed: (){
+                  
+                    }, child: Text('SIGN IN',style: TextStyle(fontSize: 20),)),
+                  ),
+                ),
+              ),
+
+
+              Container(
+                margin: EdgeInsets.only(top: 155),
+                height: 100,
+                width: 344,
+                decoration: BoxDecoration(
+                   borderRadius: BorderRadius.only(
+                   topRight: Radius.circular(40),
+                   topLeft: Radius.circular(40)
+                   ),
+                   color: Colors.blue[900],
+                ),
+                child: Center(child: Text('Powered By : W3villa Technologies')),
+              )
 
 
 
